@@ -5,7 +5,49 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:text="Welcome to Scale Randomiser! Press the button below to get started and generate a random scale!"
+            android:id="@+id/welcomeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/scaleView"
+            android:layout_marginTop="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="Next Scale"
+            android:id="@+id/generateButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scaleView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/scaleNumberView"
+            android:layout_below="@+id/generateButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regenerateButton"
+            android:text="Regenerate"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/scaleNumberView"
+            android:layout_alignEnd="@+id/scaleNumberView" />
 
 </RelativeLayout>
