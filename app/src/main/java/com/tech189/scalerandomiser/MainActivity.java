@@ -4,8 +4,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,13 +12,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // Setting up the TextViews and the button
+        
+                // Setting up the TextViews and the button
         final TextView wV = (TextView) findViewById(R.id.welcomeView);
         final TextView sV = (TextView) findViewById(R.id.scaleView);
         final TextView sNV = (TextView) findViewById(R.id.scaleNumberView);
         final Button gB = (Button) findViewById(R.id.generateButton);
         final Button rGB = (Button) findViewById(R.id.regenerateButton);
+
+
 
 
     }
